@@ -260,10 +260,12 @@ section {
 }
 
 .contact form {
-  max-width: 600px;
+  min-width:100%;
+  
   margin: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -273,6 +275,8 @@ section {
   border: 2px solid #ddd;
   border-radius: 8px;
   font-size: clamp(1rem, 2.5vw, 1.125rem);
+  min-width: 100%;
+  max-width: 660px;
 }
 
 .contact button {
@@ -340,17 +344,23 @@ footer {
 
     <!-- About / Services -->
   <section id="about" class="about">
-    <h2>Who I Am</h2>
+    <h2>How I Can Help You</h2>
     <p>
-      I’m a beginner‑friendly web designer passionate about helping small businesses
-      achieve an online presence. I mainly use Webflow and, when needed, hand‑coded HTML, CSS, and JS to build
-      websites that are easy to maintain and fit your budget.
+      I make the process simple and approachable for small businesses looking to build
+      their online presence. I primarily use Webflow and, when needed, hand‑coded HTML, 
+      CSS, JS, and other third‑party tools to create websites that are easy to maintain 
+      and fit your budget.
     </p>
     <div class="services">
       <div class="service-card">
         <h3>Web Design</h3>
-        <p>Responsive designs hosted in Webflow (  tailored for your business.</p>
+        <p>
+          Responsive designs hosted in Webflow.  
+          Simple landing pages can also be hand‑coded in HTML & CSS or built with other platforms, 
+          all tailored to your business.
+        </p>
       </div>
+
       <div class="service-card">
         <h3>Logo Design</h3>
         <p>Simple logos that resonate with your brand’s goals.</p>
