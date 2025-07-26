@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name – Web Designer</title>
+  <style>
+    :root {
+  --primary: #E8871E;
+  --bg: #ffffff;
+  --text: #2B4570;
+}
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base font scaling */
+html {
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+  font-size: clamp(1rem, 2.2vw, 1.125rem); /* scales body text */
+  justify-content: center;
+  justify-items: center;
+  padding: 5px;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 3.5vw, 1.8rem);
+}
+
+p,
+li,
+a,
+button,
+input,
+textarea,
+span {
+  font-size: inherit;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  border-radius: 0px;
+}
+
+nav .logo {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: bold;
+  color: var(--primary);
+  margin-right: 15px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+.hero {
+  width: 100%;
+  min-height: 80vh;
+  background: linear-gradient(to right, rgba(232,135,30,0.99), rgba(241,186,126,0.88)),
+    url('https://jayeyem.github.io/Salmon-Flow-Game/IMG_3640.jpg') center/cover no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero h2 span {
+  color: #2B4570;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 1rem auto;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  text-shadow: 0px 0px 10px #000000;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #2B4570;
+  color: #E2EFF3;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about .services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.service-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+
+
+
+.portfolio-grid .item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-grid img {
+  width: auto;
+  height: 80%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-grid .item:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 1rem;
+  text-align: center;
+}
+
+.item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay span {
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.overlay p {
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+}
+
+@media (max-width: 600px) {
+  .portfolio-grid .item {
+    max-height: 280px;
+  }
+  .portfolio-grid img {
+ width: auto;
+  max-width:90%;
+  max-height: 60%;
+  
+  display: block;
+  transition: transform 0.3s ease;
+}
+}
+
+@media (min-width: 600px) {
+  .portfolio-grid .item {
+    min-height: 280px;
+  }
+  .portfolio-grid img {
+  width: auto;
+  max-width:90%;
+  max-height: 60%;
+  
+  display: block;
+  transition: transform 0.3s ease;
+}
+}
+
+.contact form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+}
+
+.contact button {
+  background: var(--primary);
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.contact button:hover {
+  background: #F1BA7E;
+  color: var(--text);
+}
+
+#instruction-p {
+  
+  text-align: center;
+  width:50%;
+  height:auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  margin-top: 2rem;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+/* Optional: tweak layout on very small screens */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <!-- Hero -->
+  <nav>
+      <h1 class="logo">Joshua.I</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  <header class="hero">
+    
+    <div class="hero-content">
+      <h2>Hello, I’m <span>Joshua</span></h2>
+      <p>I create simple, modern websites for small businesses & communities.</p>
+      <a href="#contact" class="btn">Let’s Work Together</a>
+    </div>
+  </header>
+
+    <!-- About / Services -->
+  <section id="about" class="about">
+    <h2>Who I Am</h2>
+    <p>
+      I’m a beginner‑friendly web designer passionate about helping small businesses
+      achieve an online presence. I mainly use Webflow and, when needed, hand‑coded HTML, CSS, and JS to build
+      websites that are easy to maintain and fit your budget.
+    </p>
+    <div class="services">
+      <div class="service-card">
+        <h3>Web Design</h3>
+        <p>Responsive designs hosted in Webflow (  tailored for your business.</p>
+      </div>
+      <div class="service-card">
+        <h3>Logo Design</h3>
+        <p>Simple logos that resonate with your brand’s goals.</p>
+      </div>
+      <div class="service-card">
+        <h3>Code</h3>
+        <p>Small tweaks and enhancements as needed.</p>
+      </div>
+      <div class="service-card">
+        <h3>Custom Inquiry</h3>
+        <p>Get in touch, and we can discuss whether your idea is something I can help with.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Portfolio -->
+<section id="portfolio" class="portfolio">
+  <h2>Portfolio</h2>
+  <p id="instruction-p"> Click/Tap on a logo or image to view the relevant project/work in a new tab</p>
+  <div class="portfolio-grid">
+    
+     <!-- Item 1 -->
+    <a href="https://www.ladori.ca/" target="_blank" rel="noopener noreferrer">
+      <div class="item">
+        <img src="https://cdn.prod.website-files.com/66296ccd8993b9905104eeac/66ac4672b4c4fb9f677c67eb_Ladori%20Logo%20%5BPNG%5D-p-2000.png" alt="Ladori Hair Studio logo" />
+        
+          <div class="overlay">
+            <span>Ladori Hair Studio:</span><br/>
+            <p>Webflow hosted website and Ladori Logo designed and maintained for Ladori Hair Studio in Saint John NB, Canada</p>
+          </div>
+        
+      </div>
+    </a>
+    
+    <!-- Item 2 -->
+    <a href="https://cater-captain.vercel.app/" target="_blank" rel="noopener noreferrer">
+      <div class="item">
+        <img src="https://cater-captain.vercel.app/captainCaterLogoFinal.svg" alt="Cater-Captain logo" />
+        
+          <div class="overlay">
+            <span>Cater-Captain:</span><br/>
+            <p>Module 2 project for the Get Coding Software Development program</p>
+          </div>
+        
+      </div>
+    </a>
+    
+    <!-- Item 3 -->
+    <a href="https://jayeyem.github.io/Salmon-Flow-Game/" target="_blank" rel="noopener noreferrer">
+      <div class="item">
+        <img src="https://jayeyem.github.io/Salmon-Flow-Game/salmonFlowFavicon.svg" alt="Salmon-Flow-Game logo" />
+        
+          <div class="overlay">
+            <span>Salmon-Flow-Game:</span><br/>
+            <p>Module 1 project for the Get Coding Software Development program</p>
+          </div>
+        
+      </div>
+    </a>
+    
+    <!-- Item 4 -->
+    <a href="https://jayeyem.github.io/Salmon-Flow-Overview-Video/" target="_blank" rel="noopener noreferrer">
+      <div class="item">
+        <img src="https://jayeyem.github.io/Salmon-Flow-Game/finalSalmonCharacter.svg" alt="Salmon-Flow-Overview-Video logo" />
+        
+          <div class="overlay">
+            <span>Salmon-Flow-Overview-Video:</span><br/>
+            <p>Overview video page created to accompany the Module 1 project for the Get Coding Software Development program</p>
+          </div>
+        
+      </div>
+    </a>
+
+   
+  </div>
+</section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="number" placeholder="Your Phone Number" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 <a href="https://github.com/JayEyeM" target="_blank" rel="noopener noreferrer"> https://github.com/JayEyeM </a> -- Built with ❤️ and hosted on GitHub Pages.</p>
+  </footer>
+</body>
+</html>
