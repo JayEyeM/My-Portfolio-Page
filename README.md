@@ -1,2 +1,2 @@
 # My-Portfolio-Page
-Portfolio page with links to projects/works and contact form.
+Portfolio site with links to projects/works, email link to get in touch, a services & pricing page, and policy page.
