@@ -50,7 +50,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
-  background: white;
+  background: var(--text);
   box-shadow: 0 2px 5px rgba(0,0,0,0.25);
   position: sticky;
   top: 0px;
@@ -59,8 +59,8 @@ nav {
 }
 
 nav .logo {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: bold;
+  font-size: clamp(1.5rem, 1vw, 1rem);
+  font-weight: normal;
   color: var(--primary);
   margin-right: 15px;
 }
@@ -74,13 +74,14 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: var(--text);
+  color: var(--bg);
   font-weight: bold;
   transition: color 0.3s;
 }
 
 nav a:hover {
   color: var(--primary);
+  text-shadow: #000000 0px 0px 2px;
 }
 
 .hero {
@@ -88,7 +89,7 @@ nav a:hover {
   min-height: 80vh;
   background: linear-gradient(to right, rgba(232,135,30,0.99), rgba(241,186,126,0.88)),
     url('https://jayeyem.github.io/Salmon-Flow-Game/IMG_3640.jpg') center/cover no-repeat;
-  color: white;
+    color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
