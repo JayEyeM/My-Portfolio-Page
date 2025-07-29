@@ -1,7 +1,15 @@
 :root {
-  --primary: #E8871E;
+  --primary: #16253B;
   --bg: #ffffff;
-  --text: #2B4570;
+  --text: #16253B;
+  --accent: #E8871E;
+  --graybg: #f3f3f3;
+  --hover: #274168;
+  --hover2: #03286c;
+  --gradient: linear-gradient(to right, #E8871E, #000000e2);
+  --gradient2: linear-gradient(to right, #00000004, #e8861e8a);
+  --gradient3: linear-gradient(to right, #16253B, #522b01);
+  --gradient4: linear-gradient(to right, #16253b, #522b01f5);
 }
 
 /* Global reset */
@@ -25,6 +33,7 @@ body {
   justify-content: center;
   justify-items: center;
   padding: 5px;
+  
 }
 
 h1 {
@@ -50,7 +59,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
-  background: var(--text);
+  background: var(--primary);
   box-shadow: 0 2px 5px rgba(0,0,0,0.25);
   position: sticky;
   top: 0px;
@@ -61,7 +70,7 @@ nav {
 nav .logo {
   font-size: clamp(1.5rem, 1vw, 1rem);
   font-weight: normal;
-  color: var(--primary);
+  color: var(--accent);
   margin-right: 15px;
 }
 
@@ -80,16 +89,18 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--primary);
-  text-shadow: #000000 0px 0px 2px;
+  color: var(--accent);
+ 
 }
 
 .hero {
   width: 100%;
-  min-height: 80vh;
-  background: linear-gradient(to right, rgba(232,135,30,0.99), rgba(241,186,126,0.88)),
-    url('https://jayeyem.github.io/Salmon-Flow-Game/IMG_3640.jpg') center/cover no-repeat;
-    color: white;
+  min-height: 89vh;
+  background:  
+            
+            var(--gradient4),
+               url('https://jayeyem.github.io/Salmon-Flow-Game/IMG_3640.jpg') center/cover no-repeat;  
+    color: var(--bg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,22 +110,24 @@ nav a:hover {
 }
 
 .hero h2 span {
-  color: #2B4570;
+  color: var(--accent);
+  font-weight: bold;
+  text-shadow: #000000 0px 0px 10px;
 }
 
 .hero p {
   max-width: 600px;
   margin: 1rem auto;
   font-size: clamp(1rem, 2.5vw, 1.2rem);
-  text-shadow: 0px 0px 10px #000000;
+  
 }
 
 .btn {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
-  background: #2B4570;
-  color: #E2EFF3;
+  background: var(--accent);
+  color: var(--text);
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
@@ -124,6 +137,8 @@ nav a:hover {
 
 .btn:hover {
   transform: scale(1.05);
+  background: var(--primary);
+  color: var(--accent);
 }
 
 section {
@@ -140,7 +155,7 @@ section {
 
 .serviceSideNote {
   font-size: clamp(0.9rem, 2.2vw, 1rem);
-  color: #555;
+  color: var(--hover);
   margin-top: 0.5rem;
   font-style: italic;
   margin-bottom: 1.25rem;
@@ -156,16 +171,27 @@ section {
 }
 
 .service-card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  
+  
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px var(--text);
+  
+  display: block; /* allow the whole card to be clickable */
+  background: var(--graybg);
+  padding: 1rem;
+  text-decoration: none; /* remove underline */
+  color: inherit; /* inherit text color */
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-25px) scale(1.10);
+  box-shadow: 0px 4px 16px var(--accent);
+  z-index: 1; /* bring to front on hover */
 }
+
 
 .services {
   display: flex;
@@ -173,21 +199,7 @@ section {
   gap: 1rem;
 }
 
-.service-card {
-  display: block; /* allow the whole card to be clickable */
-  background: #f8f8f8;
-  border-radius: 8px;
-  padding: 1rem;
-  text-decoration: none; /* remove underline */
-  color: inherit; /* inherit text color */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
 
-.service-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
 
 .portfolio {
   padding: 2rem 1rem;
@@ -224,7 +236,9 @@ section {
   border-radius: 8px;
   width: 100%;
   min-height: 280px;
-  background: #f8f8f8;
+  background: var(--gradient3);
+           
+  color: var(--bg);
   box-shadow: 0 2px 6px rgba(0,0,0,0.5);
   padding: 1rem;
 
@@ -236,9 +250,6 @@ section {
   
 }
 
-
-
-
 .portfolio-grid img {
   max-width: 225px;
   max-height: 300px;
@@ -249,12 +260,13 @@ section {
   transition: transform 0.3s ease;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: 0 0px 50px 5px var(--bg) ;
 }
 
 
 .portfolio-grid .item:hover img {
-  transform: scale(1.1);
+  transform: scale(1.5);
 }
 
 .overlay {
@@ -320,25 +332,50 @@ section {
   }
 }
 
-
+.phone-button,
 .email-button {
   display: inline-block;
   padding: 12px 20px;
-  background-color: #E8871E;
-  color: #FFFFFF;
+  background-color: var(--accent);
+  color: var(--text);
   font-weight: bold;
   font-size: 16px;
   text-decoration: none;
   border: none;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  
+  margin-top: 2rem;
+  min-width: 150px;
 }
 
+.phone-button:hover,
 .email-button:hover {
-  background-color: #cf7318;
+  background-color: var(--primary);
+  color: var(--accent);
   transform: scale(1.05);
+}
+
+.contactSideNote {
+  font-size: clamp(0.9rem, 2.2vw, 1rem);
+  color: var(--hover);
+  margin-top: 0.5rem;
+  font-style: italic;
+  
+}
+
+.contact-icon {
+  width: 80%;
+ 
+  max-width: 320px;
+  height: auto;
+  
+  margin-top: 20px;
+
+  border-radius: 10px;
+  vertical-align: middle;
 }
 
 #instruction-p {
@@ -349,23 +386,50 @@ section {
   margin-right: auto;
 }
 
+
+
 .myLinks {
-  background-color: #f8f8f8;
+  background-color: var(--bg);
+  box-shadow: 0 2px 6px var(--primary);
   padding: 15px;
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 80px;
-  margin-bottom: 20px;
+  margin-top: 2rem;
+  
   border-radius: 10px;
+  
 }
 
-footer {
+
+
+ footer {
   text-align: center;
   padding: 1rem;
-  background: #eee;
-  margin-top: 2rem;
+  background: var(--primary);
+  margin-top: 4rem;
   font-size: clamp(0.9rem, 2.5vw, 1rem);
+  border-radius: 10px;
+  color: var(--accent);
+}
+
+.footerLinksContainer {
+  display: flex;
+  flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footerLinks {
+  color: var(--bg);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footerLinks:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 600px) {
@@ -374,3 +438,4 @@ footer {
     gap: 0.5rem;
   }
 }
+
