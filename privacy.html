@@ -4,62 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy Policy</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-      color: #333;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    h2 {
-      margin-top: 1.5rem;
-    }
-
-    .back-btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #E8871E;
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-      transition: background-color 0.3s ease, transform 0.2s ease;
-      cursor: pointer;
-    }
-
-    .back-btn:hover {
-      background-color: #cf7318;
-      transform: scale(1.05);
-    }
-
-    .email-button {
-      color: #E8871E;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .email-button:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-  text-align: center;
-  padding: 1rem;
-  background: #eee;
-  margin-top: 2rem;
-  font-size: clamp(0.9rem, 2.5vw, 1rem);
-}
-  </style>
+  <link rel="stylesheet" href="privacyStyle.css" />
 
   <script>
-    // Define email and a function to create the mailto link once
     const user = "jayeyemarketing";
     const domain = "gmail.com";
     const email = user + "@" + domain;
@@ -71,9 +18,8 @@
 </head>
 <body>
 
-  <p>Joshua.I's Portfolio Policy Page</p>
+  <p>Joshua.I's Freelance Services Privacy Policy</p>
   <h1>Privacy Policy</h1>
-<!-- Ensure date is updated accordingly when updates are made -->
   <p><strong>Last Updated:</strong> July 27, 2025</p>
 
   <p>
@@ -112,27 +58,35 @@
   <h2>Your Rights</h2>
   <p>
     You may request that I delete or correct any personal information I hold about you, except where I am required to keep 
-    certain information for legal, tax, or legitimate business record‑keeping 
-    purposes.
-    <script>document.write(getEmailLink());</script>.
+    certain information for legal, tax, or legitimate business record‑keeping purposes.  
+    <script>document.write(getEmailLink());</script>
   </p>
 
   <h2>Changes to This Policy</h2>
   <p>
-    I may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date.
+    I may update this Privacy Policy from time to time. Updates will be reflected on this page with a new “Last Updated” date.
   </p>
 
   <h2>Contact</h2>
   <p>
-    If you have any questions about this Privacy Policy or how your information is handled, please contact me via <br>
-    <script>document.write(getEmailLink());</script>.
+    If you have any questions about this Privacy Policy or how your information is handled, please contact me at <br>
+    <script>document.write(getEmailLink());</script>
   </p>
 
   <p><a href="index.html" class="back-btn">Back to Home</a></p>
 
  <footer>
-        <p>© 2025 <a href="https://github.com/JayEyeM" target="_blank" rel="noopener noreferrer">https://github.com/JayEyeM</a> — Built with ❤️ and hosted on GitHub Pages.</p>
-        
+    <div class="footerLinksContainer">
+      <a class="footerLinks" href="./index.html" >Home</a>
+
+      <a class="footerLinks" href="./pricing.html" >Services</a>
+      
+      <a class="footerLinks" href="./privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a><br>
+      
+    </div>
+    <p>© 2025 <a class="footerLinks" href="https://github.com/JayEyeM" target="_blank" rel="noopener noreferrer">https://github.com/JayEyeM</a> — Built with ❤️ and hosted on GitHub Pages.</p>
+    
     </footer>
+
 </body>
 </html>
