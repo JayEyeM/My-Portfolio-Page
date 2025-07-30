@@ -47,8 +47,24 @@
       
     }
 
+    .priceAccent {
+      color: var(--graybg);
+      font-weight: bold;
+      font-size: 1.25rem;
+      background: var(--primary);
+      padding: 0.2rem 0.4rem;
+      border-radius: 10px;
+    }
+
     section {
       margin-bottom: 2rem;
+    }
+
+    .priceList {
+      list-style-type: "🔸";
+      
+      padding-left: 1.5rem;
+      margin-top: 0.5rem;
     }
 
     details {
@@ -63,6 +79,7 @@
 
     details[open] {
       box-shadow: 0 4px 12px var(--accent);
+      background: var(--primary);
     }
 
     summary {
@@ -81,7 +98,7 @@
     }
 
     summary::before {
-      content: "▶";
+      content: "🙈";
       display: inline-block;
       margin-right: 8px;
       color: var(--accent);
@@ -89,7 +106,9 @@
     }
 
     details[open] summary::before {
-      transform: rotate(90deg);
+      /* transform: rotate(90deg); */
+      content: "🙉";
+      
     }
 
     details > div {
