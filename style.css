@@ -9,7 +9,7 @@
   --gradient: linear-gradient(to right, #E8871E, #000000e2);
   --gradient2: linear-gradient(to right, #00000004, #e8861e8a);
   --gradient3: linear-gradient(to right, #16253B, #522b01);
-  --gradient4: linear-gradient(to right, #16253b, #522b01f5);
+  --gradient4: linear-gradient(to right, #16253bfc, #522b01f5);
 }
 
 /* Global reset */
@@ -71,15 +71,22 @@ nav .logo {
   font-size: clamp(1.5rem, 1vw, 1rem);
   font-weight: normal;
   color: var(--accent);
-  margin-right: 15px;
+  margin-right: clamp(0rem, auto);
 }
 
 nav ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   list-style: none;
-  gap: 1rem;
+  row-gap: 0rem;
+  column-gap: 1rem;
+  
+  
 }
+
 
 nav a {
   text-decoration: none;
