@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+  const user = "jayeyemarketing";
+  const domain = "gmail.com";
+  const email = user + "@" + domain;
+  function getEmailLink() {
+    return (
+      '<a href="mailto:' + email + '" class="email-button">📧 Email Me</a>'
+    );
+  }
+
+  // Replace everything in the body
+  window.onload = function () {
+    document.body.innerHTML = `
+      <div style="text-align:center;padding:50px;font-family:Arial, sans-serif;">
+        <h1>🚧 Page Under Construction</h1>
+        <p>This page isn’t available yet. Please check back later.</p>
+        <p>${getEmailLink()}</p>
+        <p><a href="./index.html">⬅ Back to Home</a></p>
+      </div>
+    `;
+  };
+</script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services & Rates – Joshua Ivany Freelance</title>
   <link rel="stylesheet" href="pricingStyle.css" />
 
-  <script>
-    const user = "jayeyemarketing";
-    const domain = "gmail.com";
-    const email = user + "@" + domain;
-    function getEmailLink() {
-      return '<a href="mailto:' + email + '" class="email-button">📧 Email Me</a>';
-    }
-  </script>
+  
 </head>
 <body>
+  <template>
   <h1>Services & Rates</h1>
   <p class="intro">
     Clear, honest pricing for every type of job.<br>
@@ -199,12 +216,31 @@
   <a href="index.html" class="back-btn">← Back to Home</a>
 
   <footer>
-    <div class="footerLinksContainer">
-      <a class="footerLinks" href="./index.html" >Home</a>
-      <!-- <a class="footerLinks" href="./pricing.html" >Services</a> -->
-      <a class="footerLinks" href="./privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a><br>
-    </div>
-    <p class="footerP">© 2025 <a class="footerLinks" href="https://github.com/JayEyeM" target="_blank" rel="noopener noreferrer">https://github.com/JayEyeM</a> — Built with ❤️ and hosted on GitHub Pages.</p>
-  </footer>
+      <div class="footerLinksContainer">
+        <a class="footerLinks" href="./index.html">Home</a>
+        <a class="footerLinks" href="./assets.html">Logos & Assets</a>
+        <a class="footerLinks" href="./pricing.html">Services</a>
+
+        <a
+          class="footerLinks"
+          href="./privacy.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Privacy Policy</a
+        ><br />
+      </div>
+      <p class="footerP">
+        © 2025
+        <a
+          class="footerLinks"
+          href="https://github.com/JayEyeM"
+          target="_blank"
+          rel="noopener noreferrer"
+          >https://github.com/JayEyeM</a
+        >
+        — Built with ❤️ and hosted on GitHub Pages.
+      </p>
+    </footer>
+</template>
 </body>
 </html>
