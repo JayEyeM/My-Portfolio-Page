@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assets – Joshua Ivany Freelance</title>
+    <link rel="stylesheet" href="assetPageStyle.css" />
+
+    <script>
+      const user = "jayeyemarketing";
+      const domain = "gmail.com";
+      const email = user + "@" + domain;
+      function getEmailLink() {
+        return (
+          '<a href="mailto:' + email + '" class="email-button">📧 Email Me</a>'
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Logos & Assets Designed By Joshua Ivany</h1>
+    <p class="intro">
+      A collection of logos & assets, designed using Inkscape.
+    </p>
+    <p class="disclaimer">
+      ⚠️ Note: The logos and assets displayed here are for portfolio showcase
+      only. Some are mock concepts, while others are used in my own projects or
+      by client businesses. Please respect my work — these are not available for
+      public use or redistribution.
+    </p>
+
+    <section>
+      <div class="portfolio-grid" id="portfolioGrid">
+        <img
+        src=https://cdn.prod.website-files.com/66296ccd8993b9905104eeac/66ac4672b4c4fb9f677c67eb_Ladori%20Logo%20%5BPNG%5D-p-1080.png
+        alt="Ladori Logo" />
+        <img src="images\Ladori Favicon.png" alt="Ladori Favicon" /> <img
+        src=https://jayeyem.github.io/Salmon-Flow-Game/salmonFlowFavicon.svg
+        alt="Salmon-Flow-Game Logo" />
+      </div>
+    </section>
+
+    <script>
+      const imageFolder = "images/";
+
+      const imageFiles = [
+        "cater-captain-logo.svg",
+        "Ivy+MossLogo.svg",
+        "Bimovi Logo.svg",
+        "Bimovi Favicon.svg",
+        "Globeeta Mock Logo.svg",
+        "Wollio Icons Logo.svg",
+        "Plow-alert-logo.svg",
+        "Plate Pilot mock logo.svg",
+        "Turaul Mock Logo.svg",
+        "VK trucking mock logo.svg",
+
+        "cheese.svg",
+        "grapes.svg",
+        "lemon.svg",
+        "milk.svg",
+        "orange.svg",
+        "salmon.svg",
+        "shoppingBasket.svg",
+        "BabyShower.svg",
+        "Birthday.svg",
+        "Conference.svg",
+        "Engagement.svg",
+        "Family Gathering.svg",
+        "Fundraiser.svg",
+        "Meeting.svg",
+        "Other.svg",
+        "Retirement.svg",
+        "Wedding.svg",
+        "Work Party.svg",
+        "salmonFlowFavicon.svg",
+        "driftwoodObstacleImageChoices/fishingNet.svg",
+        "driftwoodObstacleImageChoices/floatingBabe.svg",
+        "driftwoodObstacleImageChoices/knittingGranny.svg",
+        "driftwoodObstacleImageChoices/lilyPad.svg",
+        "driftwoodObstacleImageChoices/manOnRaft.svg",
+        "driftwoodObstacleImageChoices/scubaDiver.svg",
+        "driftwoodObstacleImageChoices/shipInBottle.svg",
+        "driftwoodObstacleImageChoices/tinCan.svg",
+        "beaverObstacleImageChoices/boatFisherman.svg",
+        "beaverObstacleImageChoices/carTire.svg",
+        "beaverObstacleImageChoices/ducky.svg",
+        "beaverObstacleImageChoices/fishingRod.svg",
+        "beaverObstacleImageChoices/mrMoosey.svg",
+        "beaverObstacleImageChoices/mrTurtle.svg",
+        "beaverObstacleImageChoices/paperBoat.svg",
+        "beaverObstacleImageChoices/rubberBoot.svg",
+        "beaverObstacleImageChoices/sea-dooMan.svg",
+        "beaverObstacleImageChoices/sirOtter.svg",
+        "bearImage.svg",
+      ];
+
+      const portfolioGrid = document.getElementById("portfolioGrid");
+
+      // Convert file name to nice alt text
+      function formatAltText(filename) {
+        return filename
+          .replace(/\.[^/.]+$/, "") // remove extension
+          .replace(/\+/g, " & ") // convert "+" into " & "
+          .replace(/[-_]/g, " ") // replace dashes/underscores with spaces
+          .replace(/([a-z])([A-Z])/g, "$1 $2") // split camelCase / PascalCase
+          .replace(/\s+/g, " ") // collapse multiple spaces
+          .trim()
+          .replace(/\b\w/g, (c) => c.toUpperCase()); // capitalize each word
+      }
+
+      imageFiles.forEach((file) => {
+        const img = document.createElement("img");
+        img.src = imageFolder + file;
+        img.alt = formatAltText(file);
+        portfolioGrid.appendChild(img);
+      });
+    </script>
+
+    <footer>
+      <div class="footerLinksContainer">
+        <a class="footerLinks" href="./index.html">Home</a>
+
+        <!-- <a class="footerLinks" href="./pricing.html">Services</a> -->
+
+        <a
+          class="footerLinks"
+          href="./privacy.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Privacy Policy</a
+        ><br />
+      </div>
+      <p class="footerP">
+        © 2025
+        <a
+          class="footerLinks"
+          href="https://github.com/JayEyeM"
+          target="_blank"
+          rel="noopener noreferrer"
+          >https://github.com/JayEyeM</a
+        >
+        — Built with ❤️ and hosted on GitHub Pages.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="400mm"
+   height="400mm"
+   viewBox="0 0 400 400"
+   version="1.1"
+   id="svg1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false">
+    <inkscape:grid
+       id="grid7"
+       units="mm"
+       originx="1.8897638e-06"
+       originy="6.7859476e-06"
+       spacingx="0.99999999"
+       spacingy="0.99999999"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g17">
+      <rect
+         style="fill:#2f2963;fill-opacity:1;stroke:#ffffff;stroke-width:1.21875e-08"
+         id="rect1-5"
+         width="400"
+         height="400"
+         x="0"
+         y="0" />
+      <rect
+         style="fill:#4e6e5d;fill-opacity:1;stroke:#ffffff;stroke-width:1.21875e-08"
+         id="rect1"
+         width="400"
+         height="400"
+         x="0"
+         y="-1.2954486e-06" />
+      <text
+         xml:space="preserve"
+         style="font-size:49.6464px;line-height:0.8;font-family:Italiana;-inkscape-font-specification:Italiana;text-align:center;text-anchor:middle;fill:#1b3022;fill-opacity:1;stroke:#ffffff;stroke-width:3.1029e-08"
+         x="200.12764"
+         y="262.72006"
+         id="text2-4"><tspan
+           sodipodi:role="line"
+           id="tspan2-3"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';fill:#1b3022;fill-opacity:1;stroke-width:3.1029e-08"
+           x="200.12764"
+           y="262.72006">VK Trucking</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:49.6464px;line-height:0.8;font-family:Italiana;-inkscape-font-specification:Italiana;text-align:center;text-anchor:middle;fill:#d4d2d5;fill-opacity:1;stroke:#ffffff;stroke-width:3.1029e-08"
+         x="200.67065"
+         y="260.88785"
+         id="text2"><tspan
+           sodipodi:role="line"
+           id="tspan2"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';stroke-width:3.1029e-08"
+           x="200.67065"
+           y="260.88785">VK Trucking</tspan></text>
+      <rect
+         style="fill:#95190c;fill-opacity:0;stroke:#1b3022;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4"
+         width="34.133419"
+         height="23.540291"
+         x="62.149906"
+         y="193.85655" />
+      <rect
+         style="fill:#95190c;fill-opacity:0;stroke:#1b3022;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4-7"
+         width="55.289062"
+         height="74.149414"
+         x="283.7373"
+         y="143.16553" />
+      <path
+         id="rect16-9"
+         style="fill:#95190c;fill-opacity:0;stroke:#1b3022;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1"
+         d="m 106.04225,175.16411 v 42.17624 h 168.70528 v -22.6698 H 232.5713 v -19.50644 z" />
+      <rect
+         style="fill:#2f2963;fill-opacity:0.00411521;stroke:#1b3022;stroke-width:0.661438;stroke-dasharray:none;stroke-opacity:1"
+         id="rect17"
+         width="277.28458"
+         height="2.912962"
+         x="61.863384"
+         y="219.42882" />
+    </g>
+  </g>
+</svg>

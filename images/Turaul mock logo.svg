@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="212.35138"
+   height="201.88977"
+   viewBox="0 0 56.184636 53.416668"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="Turaul mock logo.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="6.4242978"
+     inkscape:cx="106.15946"
+     inkscape:cy="100.94489"
+     inkscape:window-width="2880"
+     inkscape:window-height="1514"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid4"
+       units="mm"
+       originx="6.4024296"
+       originy="0.9448819"
+       spacingx="1"
+       spacingy="0.99999999"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient9"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop9" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop10" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient7"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#058c42;stop-opacity:1;"
+         offset="0"
+         id="stop7" />
+      <stop
+         style="stop-color:#058c42;stop-opacity:0;"
+         offset="1"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#fa9f42;stop-opacity:1;"
+         offset="0"
+         id="stop4" />
+      <stop
+         style="stop-color:#fa9f42;stop-opacity:0;"
+         offset="1"
+         id="stop5" />
+    </linearGradient>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4"
+       x="-0.3029795"
+       y="-1.009127"
+       width="1.605959"
+       height="3.018254">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="4.4165696"
+         id="feGaussianBlur4" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4"
+       id="linearGradient5"
+       x1="32.366341"
+       y1="27.408489"
+       x2="9.822155"
+       y2="10.944688"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,0.49945792,0,12.516115)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7"
+       id="linearGradient8"
+       x1="37.580746"
+       y1="38.994568"
+       x2="9.3250322"
+       y2="33.131298"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9"
+       id="linearGradient10"
+       x1="18.895956"
+       y1="19.129816"
+       x2="69.830849"
+       y2="23.479628"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-55.005701)" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(1.6939762,0.25)">
+    <g
+       id="g12">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1"
+         width="52.916668"
+         height="52.916668"
+         x="0"
+         y="0" />
+      <g
+         id="g11"
+         transform="translate(-0.08268229,-1.1740884)">
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:13.9494px;line-height:0.8;font-family:Cinzel;-inkscape-font-specification:'Cinzel Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#37abc8;stroke-width:0;stroke-opacity:1;filter:url(#filter4)"
+           x="26.515894"
+           y="35.452366"
+           id="text1-1"><tspan
+             sodipodi:role="line"
+             id="tspan1-1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Italiana;-inkscape-font-specification:Italiana;fill:#ffffff;fill-opacity:1;stroke:#37abc8;stroke-width:0;stroke-opacity:1"
+             x="26.515896"
+             y="35.452366">Turaul</tspan></text>
+        <g
+           id="g10"
+           transform="translate(-1.0583333)">
+          <g
+             id="g8"
+             transform="translate(-0.00103353,-0.01240234)">
+            <path
+               style="font-size:13.9494px;line-height:0.8;font-family:Italiana;-inkscape-font-specification:Italiana;text-align:center;text-anchor:middle;fill:#37abc8;stroke:#37abc8;stroke-width:0"
+               d="m 13.586917,35.453632 h -1.1578 V 25.828546 H 10.01587 v -0.139494 h 5.998242 v 0.139494 h -2.427195 z m 3.682649,-1.604181 q 0,1.102003 0.585875,1.40889 0.278988,0.139494 0.711419,0.139494 0.878812,0 1.562333,-0.669571 0.69747,-0.669572 0.753267,-1.241497 v -5.007835 h 0.976458 v 5.984293 q 0,0.404533 0.153444,0.627723 0.167393,0.209241 0.334785,0.22319 l 0.153444,0.0279 h 0.432431 v 0.111595 h -0.850913 q -0.571926,0 -0.878812,-0.251089 -0.292938,-0.251089 -0.306887,-0.502178 l -0.01395,-0.23714 v -0.599824 q -0.251089,0.599824 -0.892761,1.129901 -0.641673,0.516128 -1.40889,0.516128 -0.753267,0 -1.241496,-0.139494 -0.47428,-0.153443 -0.683521,-0.418482 -0.362684,-0.432431 -0.362684,-1.115952 v -5.35657 h 0.976458 z m 9.025275,-4.770694 v -0.292938 q -0.627723,0.251089 -1.143851,1.018306 -0.516127,0.753268 -0.544026,1.422839 v 4.226668 h -0.976458 v -6.9747 h 0.976458 v 2.217955 q 0.22319,-0.809065 0.850913,-1.520485 0.627723,-0.725368 1.422839,-0.753267 h 0.0558 q 0.278988,0 0.46033,0.195291 0.195291,0.181343 0.195291,0.460331 0,0.278988 -0.195291,0.46033 -0.181342,0.181342 -0.46033,0.181342 -0.278988,0 -0.460331,-0.181342 -0.181342,-0.181342 -0.181342,-0.46033 z m 7.6861,6.374875 q -0.94856,0 -1.297295,-0.362684 -0.320836,-0.306887 -0.320836,-0.530077 v -0.292938 q -0.68352,1.241497 -2.190056,1.241497 -1.757624,0 -1.994764,-1.590232 -0.0279,-0.167392 -0.0279,-0.334785 0,-0.181342 0.0558,-0.390583 0.0558,-0.209241 0.320836,-0.460331 0.530077,-0.502178 2.32955,-0.613773 0.446381,-0.04185 0.823015,-0.04185 0.376633,0 0.68352,0.0279 v -2.3156 q -0.0279,-0.01395 0,-0.125545 0.0279,-0.125544 -0.0558,-0.306886 -0.06975,-0.195292 -0.195292,-0.376634 -0.125545,-0.181342 -0.446381,-0.306887 -0.320836,-0.139494 -0.836964,-0.139494 -0.516128,0 -1.213598,0.195292 -0.68352,0.181342 -1.004356,0.362684 l -0.0558,-0.09765 q 1.241497,-0.571925 2.524841,-0.571925 1.436789,0 1.897119,0.516128 0.362684,0.404532 0.362684,0.850913 v 4.673049 q 0,0.404533 0.153444,0.627723 0.167392,0.209241 0.334785,0.22319 l 0.153444,0.0279 h 0.432431 v 0.111595 z m -3.584996,-0.0558 q 0.739318,0 1.325193,-0.502179 0.599824,-0.516127 0.641672,-0.990407 v -1.687877 q -0.376634,-0.0279 -0.767217,-0.0279 -0.376634,0 -0.753267,0.04185 -1.060155,0.125545 -1.380991,0.47428 -0.320836,0.348735 -0.320836,0.962508 0,0.111595 0.01395,0.251089 0.125545,1.478637 1.241497,1.478637 z m 6.040077,-1.548384 q 0,1.102003 0.585874,1.40889 0.278988,0.139494 0.71142,0.139494 0.878812,0 1.562333,-0.669571 0.69747,-0.669572 0.753267,-1.241497 v -5.007835 h 0.976458 v 5.984293 q 0,0.404533 0.153444,0.627723 0.167392,0.209241 0.334785,0.22319 l 0.153444,0.0279 h 0.432431 v 0.111595 h -0.850913 q -0.571926,0 -0.878813,-0.251089 -0.292937,-0.251089 -0.306886,-0.502178 l -0.01395,-0.23714 v -0.599824 q -0.251089,0.599824 -0.892761,1.129901 -0.641673,0.516128 -1.40889,0.516128 -0.753267,0 -1.241496,-0.139494 -0.47428,-0.153443 -0.683521,-0.418482 -0.362684,-0.432431 -0.362684,-1.115952 v -5.35657 h 0.976458 z m 8.132514,1.604181 q -1.227547,0 -1.548383,-0.641672 -0.06975,-0.139494 -0.06975,-0.251089 v -9.555339 h 0.976458 v 9.457693 q 0,0.404533 0.153443,0.627723 0.167393,0.209241 0.334786,0.22319 l 0.153443,0.0279 h 0.432431 v 0.111595 z"
+               id="text1"
+               aria-label="Turaul" />
+            <rect
+               style="fill:url(#linearGradient8);fill-opacity:1;stroke:#060644;stroke-width:0"
+               id="rect2"
+               width="34.984917"
+               height="0.9737547"
+               x="10.076319"
+               y="35.998627"
+               transform="matrix(0.99999965,8.3943375e-4,-0.0019502,0.9999981,0,0)" />
+            <path
+               id="rect3"
+               style="fill:url(#linearGradient5);fill-opacity:1;stroke:#060644;stroke-width:0"
+               d="m 10.012826,20.658583 c 11.86472,0.418247 32.109642,-0.178043 34.983405,4.346537 l -5.09e-4,-4.993782 -34.984669,0.001 z"
+               sodipodi:nodetypes="ccccc" />
+          </g>
+          <rect
+             style="fill:url(#linearGradient10);fill-opacity:1;stroke:#ffffff;stroke-width:1.01044e-08;stroke-dasharray:none;stroke-opacity:1"
+             id="rect8"
+             width="34.982666"
+             height="0.1984375"
+             x="-44.994183"
+             y="19.799854"
+             transform="scale(-1,1)" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
